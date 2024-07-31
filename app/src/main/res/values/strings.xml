@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Life Synergy</string>
+    <string name="eslogan">PRODUCTIVIDAD CON PROPÓSITO, TU COMPAÑERO HACIA UNA</string>
+    <string name="eslogan2">VIDA EQUILIBRADA.</string>
+    <string name="lSUpper">LIFE SYNERGY</string>
+    <string name="instructions">Ingresa tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña</string>
+
+    <string name="back"><![CDATA[<]]></string>
+    <string name="forward"><![CDATA[>]]></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

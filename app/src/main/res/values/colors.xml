@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#50A65C</color>
+    <color name="cream">#F8F9E7</color>
+    <color name="negro">#232323</color>
+    <color name="yellow">#BFC14B</color>
+    <color name="gray">#AEAEAE</color>
+    <color name="BGGrey">#EEEEEE</color>
+    <color name="lightGray">#E9EFF6</color>
+    <color name="BGCream">#E7EAD3</color>
+    <color name="BGBlack">#232323</color>
+</resources>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    tools:context=".LoginActivity">
+
+    <!-- Top Image -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="0dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/medialuna"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/login"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <!-- Sign In Text -->
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        app:layout_constraintTop_toBottomOf="@id/cv_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Email EditText -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_login">
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cream"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:padding="16dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Password EditText -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_email">
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cream"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="16dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Remember Me and Forgot Password -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_password">
+
+        <CheckBox
+            android:id="@+id/cb_remember_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Forgot Password?"
+            android:textColor="@color/gray"
+            android:layout_marginStart="100dp"/>
+    </LinearLayout>
+
+    <!-- Sign In Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="LOGIN"
+        android:textSize="20sp"
+        android:backgroundTint="@color/negro"
+        android:textColor="@color/cream"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Continue with Google Button -->
+    <LinearLayout
+        android:id="@+id/btn_google_sign_in"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/redondear"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_google_logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_google"
+            android:contentDescription="Google Logo" />
+
+        <TextView
+            android:id="@+id/tv_google_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+    <!-- Bottom Sign Up Texts -->
+    <LinearLayout
+        android:id="@+id/linear_create_account"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_google_sign_in">
+
+        <TextView
+            android:id="@+id/tv_dont_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have account?"
+            android:textColor="@color/gray"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/btnLoginCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="Create account"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <!-- Bottom Bush Image -->
+    <ImageView
+        android:id="@+id/arbusto"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:src="@drawable/arbusto"
+        android:layout_marginStart="-25dp"
+        android:layout_marginBottom="-56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/arbusto2"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:src="@drawable/arbusto"
+        android:layout_marginStart="-45dp"
+        android:layout_marginBottom="-56dp"
+        app:layout_constraintStart_toEndOf="@id/arbusto"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

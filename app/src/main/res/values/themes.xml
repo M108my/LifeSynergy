@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LifeSynergy" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/cream</item>
+        <item name="colorSecondary">@color/green</item>
+        <item name="colorButtonNormal">@color/negro</item>
+        <item name="android:statusBarColor">@color/green</item>-->
+    </style>
+
+    <style name="Theme.LifeSynergy" parent="Base.Theme.LifeSynergy">
+        <item name="colorPrimary">@color/cream</item>
+        <item name="colorSecondary">@color/green</item>
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/green</item>
+    </style>
+
+</resources>
